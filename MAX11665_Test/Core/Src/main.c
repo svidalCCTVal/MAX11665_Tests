@@ -109,7 +109,6 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	//uint8_t rx_data[2] = {0x18, 0x5C};  // Byte0 = LSB, Byte1 = MSB
 
 	HAL_GPIO_WritePin(CS_GPIO_Port, CS_Pin, RESET);
 	HAL_SPI_Receive(&hspi3, rx_data, 1, 100); // data size could be 1 or 2 depending on the IOC SPI config. Cheack trying the CHIP.
