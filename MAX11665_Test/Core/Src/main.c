@@ -133,6 +133,8 @@ int main(void)
 	sprintf(buffer, "Voltaje: %.3f V\r\n", voltage);
 	HAL_UART_Transmit(&huart2, (uint8_t*)buffer, strlen(buffer), HAL_MAX_DELAY);
 
+	HAL_Delay(1000);
+
   }
   /* USER CODE END 3 */
 }
